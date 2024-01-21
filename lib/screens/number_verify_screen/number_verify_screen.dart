@@ -100,11 +100,13 @@ class _NumberVerifyScreenState extends State<NumberVerifyScreen> {
                       child: TextFormField(
                         cursorColor: Colors.black,
                         keyboardType: TextInputType.number,
+                        maxLength: 10,
                         style: TextStyle(
                             fontSize: 15,
                             fontFamily: "Bold",
                             color: AppColor.black),
                         decoration: InputDecoration(
+                          counterText: "",
                             border: InputBorder.none,
                             focusedBorder: InputBorder.none,
                             enabledBorder: InputBorder.none,

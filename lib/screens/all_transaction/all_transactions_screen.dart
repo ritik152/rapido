@@ -3,13 +3,16 @@ import 'package:rapido/utils/color.dart';
 import 'package:rapido/utils/common_widget.dart';
 
 class AllTransactionsScreen extends StatefulWidget {
+
   const AllTransactionsScreen({Key? key}) : super(key: key);
 
   @override
   State<AllTransactionsScreen> createState() => _AllTransactionsScreenState();
+
 }
 
 class _AllTransactionsScreenState extends State<AllTransactionsScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,10 +47,12 @@ class _AllTransactionsScreenState extends State<AllTransactionsScreen> {
                                   CommonText("Ride completed", 13, AppColor.black, TextAlign.start),
                                   MediumText("Full ride fare: \$10.00", 13, AppColor.hintColor, TextAlign.start),
                                 ],
-                              )),
+                              )
+                          ),
                           MediumText("-\$10.00", 13, AppColor.redColor, TextAlign.start)
                         ],
-                      ))
+                      )
+                  )
                 ],
               ),
             ),
@@ -55,4 +60,5 @@ class _AllTransactionsScreenState extends State<AllTransactionsScreen> {
         }),),
     );
   }
+
 }
